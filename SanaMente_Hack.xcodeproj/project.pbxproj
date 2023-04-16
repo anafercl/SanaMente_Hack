@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B7E2E0829EC5E1D00C9CD00 /* CrearUsuarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E2E0729EC5E1D00C9CD00 /* CrearUsuarioView.swift */; };
+		1B7E2E0A29EC6E7F00C9CD00 /* SexPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E2E0929EC6E7F00C9CD00 /* SexPicker.swift */; };
+		1B7E2E0C29EC719100C9CD00 /* ElegirAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E2E0B29EC719100C9CD00 /* ElegirAvatarView.swift */; };
 		FB72CEC729EB8EC7002ADC0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72CEC629EB8EC7002ADC0C /* AppDelegate.swift */; };
 		FB72CEC929EB8EC7002ADC0C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FB72CEC829EB8EC7002ADC0C /* art.scnassets */; };
 		FB72CECB29EB8EC7002ADC0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72CECA29EB8EC7002ADC0C /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B7E2E0729EC5E1D00C9CD00 /* CrearUsuarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearUsuarioView.swift; sourceTree = "<group>"; };
+		1B7E2E0929EC6E7F00C9CD00 /* SexPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexPicker.swift; sourceTree = "<group>"; };
+		1B7E2E0B29EC719100C9CD00 /* ElegirAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirAvatarView.swift; sourceTree = "<group>"; };
 		FB72CEC329EB8EC7002ADC0C /* SanaMente_Hack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanaMente_Hack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB72CEC629EB8EC7002ADC0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB72CEC829EB8EC7002ADC0C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -61,6 +67,9 @@
 				FB72CECC29EB8EC7002ADC0C /* Main.storyboard */,
 				FB72CECF29EB8ECA002ADC0C /* Assets.xcassets */,
 				FB72CED129EB8ECA002ADC0C /* LaunchScreen.storyboard */,
+				1B7E2E0729EC5E1D00C9CD00 /* CrearUsuarioView.swift */,
+				1B7E2E0B29EC719100C9CD00 /* ElegirAvatarView.swift */,
+				1B7E2E0929EC6E7F00C9CD00 /* SexPicker.swift */,
 			);
 			path = SanaMente_Hack;
 			sourceTree = "<group>";
@@ -137,6 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7E2E0A29EC6E7F00C9CD00 /* SexPicker.swift in Sources */,
+				1B7E2E0829EC5E1D00C9CD00 /* CrearUsuarioView.swift in Sources */,
+				1B7E2E0C29EC719100C9CD00 /* ElegirAvatarView.swift in Sources */,
 				FB72CECB29EB8EC7002ADC0C /* ViewController.swift in Sources */,
 				FB72CEC729EB8EC7002ADC0C /* AppDelegate.swift in Sources */,
 			);
@@ -285,6 +297,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74K5X7VW9D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74K5X7VW9D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
