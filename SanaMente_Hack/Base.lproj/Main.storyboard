@@ -260,17 +260,24 @@
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="4"/>
+            <point key="canvasLocation" x="-8.3969465648854964" y="-2.1126760563380285"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="Fcw-Nx-Rbm">
+            <objects>
+                <hostingController modalPresentationStyle="fullScreen" id="lpC-AS-ao3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mRv-gc-bBg"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJZ-TF-voX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="-2"/>
         </scene>
     </scenes>
     <resources>
-        <image name="avatares 1" width="124" height="120"/>
+    <image name="avatares 1" width="124" height="120"/>
         <image name="avatares 2" width="117" height="120"/>
         <image name="avatares 3" width="120" height="120"/>
         <image name="avatares 4" width="127" height="120"/>
