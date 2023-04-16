@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		1B7E2E0829EC5E1D00C9CD00 /* CrearUsuarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E2E0729EC5E1D00C9CD00 /* CrearUsuarioView.swift */; };
 		1B7E2E0A29EC6E7F00C9CD00 /* SexPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E2E0929EC6E7F00C9CD00 /* SexPicker.swift */; };
-		1B7E2E0C29EC719100C9CD00 /* ElegirAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E2E0B29EC719100C9CD00 /* ElegirAvatarView.swift */; };
+		1BDBB80729EC95780062A8C9 /* Avatars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBB80629EC95780062A8C9 /* Avatars.swift */; };
+		1BDBB80B29ECB0150062A8C9 /* SeleccionaPerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBB80A29ECB0150062A8C9 /* SeleccionaPerfilView.swift */; };
 		FB72CEC729EB8EC7002ADC0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72CEC629EB8EC7002ADC0C /* AppDelegate.swift */; };
 		FB72CEC929EB8EC7002ADC0C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FB72CEC829EB8EC7002ADC0C /* art.scnassets */; };
 		FB72CECB29EB8EC7002ADC0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72CECA29EB8EC7002ADC0C /* ViewController.swift */; };
@@ -21,7 +22,8 @@
 /* Begin PBXFileReference section */
 		1B7E2E0729EC5E1D00C9CD00 /* CrearUsuarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearUsuarioView.swift; sourceTree = "<group>"; };
 		1B7E2E0929EC6E7F00C9CD00 /* SexPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexPicker.swift; sourceTree = "<group>"; };
-		1B7E2E0B29EC719100C9CD00 /* ElegirAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirAvatarView.swift; sourceTree = "<group>"; };
+		1BDBB80629EC95780062A8C9 /* Avatars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatars.swift; sourceTree = "<group>"; };
+		1BDBB80A29ECB0150062A8C9 /* SeleccionaPerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeleccionaPerfilView.swift; sourceTree = "<group>"; };
 		FB72CEC329EB8EC7002ADC0C /* SanaMente_Hack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanaMente_Hack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB72CEC629EB8EC7002ADC0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB72CEC829EB8EC7002ADC0C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -68,8 +70,9 @@
 				FB72CECF29EB8ECA002ADC0C /* Assets.xcassets */,
 				FB72CED129EB8ECA002ADC0C /* LaunchScreen.storyboard */,
 				1B7E2E0729EC5E1D00C9CD00 /* CrearUsuarioView.swift */,
-				1B7E2E0B29EC719100C9CD00 /* ElegirAvatarView.swift */,
 				1B7E2E0929EC6E7F00C9CD00 /* SexPicker.swift */,
+				1BDBB80629EC95780062A8C9 /* Avatars.swift */,
+				1BDBB80A29ECB0150062A8C9 /* SeleccionaPerfilView.swift */,
 			);
 			path = SanaMente_Hack;
 			sourceTree = "<group>";
@@ -148,8 +151,9 @@
 			files = (
 				1B7E2E0A29EC6E7F00C9CD00 /* SexPicker.swift in Sources */,
 				1B7E2E0829EC5E1D00C9CD00 /* CrearUsuarioView.swift in Sources */,
-				1B7E2E0C29EC719100C9CD00 /* ElegirAvatarView.swift in Sources */,
+				1BDBB80B29ECB0150062A8C9 /* SeleccionaPerfilView.swift in Sources */,
 				FB72CECB29EB8EC7002ADC0C /* ViewController.swift in Sources */,
+				1BDBB80729EC95780062A8C9 /* Avatars.swift in Sources */,
 				FB72CEC729EB8EC7002ADC0C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

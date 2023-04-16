@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct CrearUsuarioView: View {
+    @State private var secondView = false
     @AppStorage("Name") var name: String = ""
     @State private var lastName: String = ""
     @State private var dateBirth = Date()
-    
     @State var sexEdit: String = "Male"
     
     var body: some View {
@@ -75,7 +75,7 @@ struct CrearUsuarioView: View {
                     }
                     
                     Button {
-                        
+                        secondView = true
                     } label: {
                         Text("Continuar")
                             .frame(width: geo.size.width * 0.85, height: geo.size.height * 0.085)
@@ -87,9 +87,10 @@ struct CrearUsuarioView: View {
                     .cornerRadius(40)
                     
                 }
-               
-  
-                
+                .sheet(isPresented: $secondView) {
+                    ElegirAvatarView()
+                }
+   
             }
             .frame(width: geo.size.width, height: geo.size.height)
             
@@ -102,6 +103,52 @@ struct CrearUsuarioView: View {
             formatter.timeStyle = .none
             return formatter
     }()
+}
+
+struct ElegirAvatarView: View {
+    @AppStorage("Avatar") var avatarPicked: Int = 0
+    @State private var avatarEdit: Int = 0
+    
+    var body: some View {
+        GeometryReader { geo in
+            ZStack{
+                VStack{
+                    Text("Selecciona tu avatar!")
+                        .font(.system(size: 32, weight: .bold))
+                    
+                    ScrollView {
+                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
+                            ForEach(AvatarPicker.avatarOptions) { avatar in
+                                Image(avatar.image)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 120, height: 120)
+                                    .opacity(avatarEdit == avatar.id ? 1.0 : 0.3)
+                                    .onTapGesture {
+                                        avatarEdit = avatar.id
+                                        avatarPicked = avatarEdit
+                                    }
+                            }
+                        }
+                    }
+                    .frame(width: geo.size.width * 0.9, height: geo.size.height * 0.75)
+                    
+                    Button {
+                        
+                    } label: {
+                        Text("Continuar")
+                            .frame(width: geo.size.width * 0.85, height: geo.size.height * 0.085)
+                    }
+                    .font(.system(size: 24, weight: .bold))
+                    .foregroundColor(.white)
+                    .frame(width: geo.size.width * 0.85, height: geo.size.height * 0.085)
+                    .background(Color("GreenColor"))
+                    .cornerRadius(40)
+                }
+            }
+            .frame(width: geo.size.width, height: geo.size.height)
+        }
+    }
 }
 
 struct CrearUsuarioView_Previews: PreviewProvider {
