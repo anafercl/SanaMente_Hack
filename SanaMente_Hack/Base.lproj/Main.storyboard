@@ -71,6 +71,141 @@
             <point key="canvasLocation" x="-867.69230769230762" y="3.5545023696682461"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="aod-jH-9k1">
+            <objects>
+                <viewController id="Wcp-ad-RZt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rOJ-hB-2Df">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifv-Bt-4Tg">
+                                <rect key="frame" x="44" y="61" width="302" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Selecciona tu avatar">
+                                        <attributes>
+                                            <font key="NSFont" size="32" name="HelveticaNeue-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="IrR-Js-V43">
+                                <rect key="frame" x="30" y="115" width="330" height="615"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="rwC-yQ-G3o">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="148"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFT-45-Idg">
+                                                <rect key="frame" x="0.0" y="0.0" width="148" height="148"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="rFT-45-Idg" secondAttribute="height" multiplier="1:1" id="dXz-TT-uZg"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="avatares 1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctW-6Z-Dnb">
+                                                <rect key="frame" x="182" y="0.0" width="148" height="148"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ctW-6Z-Dnb" secondAttribute="height" multiplier="1:1" id="Ss5-5D-i0j"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="avatares 2"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="VvV-Kc-WJl">
+                                        <rect key="frame" x="0.0" y="148" width="330" height="151"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmJ-SD-itV">
+                                                <rect key="frame" x="0.0" y="0.0" width="151" height="151"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="cmJ-SD-itV" secondAttribute="height" multiplier="1:1" id="2Lv-Zb-WD6"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="avatares 3" title=""/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdJ-s7-igq">
+                                                <rect key="frame" x="179" y="0.0" width="151" height="151"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XdJ-s7-igq" secondAttribute="height" multiplier="1:1" id="WUW-eb-oms"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="avatares 4" title=""/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ZYw-tQ-WJs">
+                                        <rect key="frame" x="0.0" y="299" width="330" height="165"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuV-1m-ML7">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="165"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="fuV-1m-ML7" secondAttribute="height" multiplier="1:1" id="6Ib-7o-uvU"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="avatares 5" title=""/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGR-BG-AIg">
+                                                <rect key="frame" x="165" y="0.0" width="165" height="165"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="KGR-BG-AIg" secondAttribute="height" multiplier="1:1" id="jPX-Dw-MIf"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="avatares 6" title=""/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="KdX-QO-Uum">
+                                        <rect key="frame" x="0.0" y="464" width="330" height="151"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwX-P9-kTe">
+                                                <rect key="frame" x="0.0" y="0.0" width="151" height="151"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="JwX-P9-kTe" secondAttribute="height" multiplier="1:1" id="2ab-Lx-Uca"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="avatares 7" title=""/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dc-5z-r4G">
+                                                <rect key="frame" x="179" y="0.0" width="151" height="151"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="3dc-5z-r4G" secondAttribute="height" multiplier="1:1" id="rG8-NU-hmp"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="avatares 8" title=""/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgL-Ml-VWI">
+                                <rect key="frame" x="41" y="738" width="308" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Continuar">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="24" name="HelveticaNeue-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.0" green="0.63921568630000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="flN-UW-DJN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPL-su-f7q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-864.61538461538464" y="690.99526066350711"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="SanaMente_Hack" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,6 +236,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="avatares 1" width="124" height="120"/>
+        <image name="avatares 2" width="117" height="120"/>
+        <image name="avatares 3" width="120" height="120"/>
+        <image name="avatares 4" width="127" height="120"/>
+        <image name="avatares 5" width="130" height="120"/>
+        <image name="avatares 6" width="141" height="120"/>
+        <image name="avatares 7" width="126" height="120"/>
+        <image name="avatares 8" width="127" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
