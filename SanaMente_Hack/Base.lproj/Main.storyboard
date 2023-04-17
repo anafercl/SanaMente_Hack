@@ -22,15 +22,27 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Elegir Usuario">
+                                        <fragment content="Mi ">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="24" name="HelveticaNeue-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Usuario">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="24" name="HelveticaNeue-Medium"/>
                                                 <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
                                     <color key="baseBackgroundColor" red="0.0" green="0.63921568627450975" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="UPT-yU-yrf" kind="show" id="D3S-x7-nmX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzL-t6-Sp5">
                                 <rect key="frame" x="41" y="688" width="308" height="58"/>
@@ -60,8 +72,8 @@
                                     <segue destination="6e3-BO-LIg" kind="show" destinationCreationSelector="showSwiftUIView:" id="DeW-Lh-wip"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qP7-Xd-OgP">
-                                <rect key="frame" x="75" y="203" width="240" height="192"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoSanaMente" translatesAutoresizingMaskIntoConstraints="NO" id="qP7-Xd-OgP">
+                                <rect key="frame" x="16" y="172" width="358" height="335"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -71,12 +83,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1954" y="-515"/>
+            <point key="canvasLocation" x="-1955.3846153846152" y="-515.40284360189571"/>
+        </scene>
+        <!--Main Controller-->
+        <scene sceneID="h4m-xY-ouP">
+            <objects>
+                <viewController storyboardIdentifier="MainController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UPT-yU-yrf" customClass="MainController" customModule="SanaMente_Hack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UB6-9R-TY1" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxf-Sg-XFl">
+                                <rect key="frame" x="37" y="72" width="184" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qh4-RR-7jq">
+                                <rect key="frame" x="75" y="119" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="637-Uf-R5w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Jp-Pc-dQr"/>
+                    <connections>
+                        <outlet property="avatar" destination="qh4-RR-7jq" id="hcl-HX-EVf"/>
+                        <outlet property="nombre" destination="Dxf-Sg-XFl" id="Mnk-pa-5po"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RyN-js-P8d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1050.7692307692307" y="-1207.1090047393363"/>
         </scene>
         <!--Hosting Controller-->
         <scene sceneID="4u9-mn-jWz">
             <objects>
-                <hostingController modalPresentationStyle="fullScreen" id="6e3-BO-LIg" sceneMemberID="viewController">
+                <hostingController id="6e3-BO-LIg" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="fIc-Nh-EoF"/>
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMV-VY-wpZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -85,6 +130,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LogoSanaMente" width="547" height="462"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
