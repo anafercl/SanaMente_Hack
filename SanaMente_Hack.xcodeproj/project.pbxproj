@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A14C8F229ED0E93007983B6 /* EmocionesControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A14C8F129ED0E93007983B6 /* EmocionesControllerViewController.swift */; };
+		1A14C8F429ED1244007983B6 /* CorrectoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A14C8F329ED1244007983B6 /* CorrectoController.swift */; };
 		1B7E2E0829EC5E1D00C9CD00 /* CrearUsuarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E2E0729EC5E1D00C9CD00 /* CrearUsuarioView.swift */; };
 		1B7E2E0A29EC6E7F00C9CD00 /* SexPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E2E0929EC6E7F00C9CD00 /* SexPicker.swift */; };
 		1BDBB80729EC95780062A8C9 /* Avatars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBB80629EC95780062A8C9 /* Avatars.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A14C8F129ED0E93007983B6 /* EmocionesControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmocionesControllerViewController.swift; sourceTree = "<group>"; };
+		1A14C8F329ED1244007983B6 /* CorrectoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectoController.swift; sourceTree = "<group>"; };
 		1B7E2E0729EC5E1D00C9CD00 /* CrearUsuarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearUsuarioView.swift; sourceTree = "<group>"; };
 		1B7E2E0929EC6E7F00C9CD00 /* SexPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexPicker.swift; sourceTree = "<group>"; };
 		1BDBB80629EC95780062A8C9 /* Avatars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatars.swift; sourceTree = "<group>"; };
@@ -70,12 +74,14 @@
 				FB72CECA29EB8EC7002ADC0C /* ViewController.swift */,
 				FB3C7F0929ECF4B400E6A2B9 /* GloboController.swift */,
 				FB72CECC29EB8EC7002ADC0C /* Main.storyboard */,
+				1A14C8F329ED1244007983B6 /* CorrectoController.swift */,
 				FB72CECF29EB8ECA002ADC0C /* Assets.xcassets */,
 				FB72CED129EB8ECA002ADC0C /* LaunchScreen.storyboard */,
 				1B7E2E0729EC5E1D00C9CD00 /* CrearUsuarioView.swift */,
 				1B7E2E0929EC6E7F00C9CD00 /* SexPicker.swift */,
 				1BDBB80629EC95780062A8C9 /* Avatars.swift */,
 				1BDBB80A29ECB0150062A8C9 /* SeleccionaPerfilView.swift */,
+				1A14C8F129ED0E93007983B6 /* EmocionesControllerViewController.swift */,
 			);
 			path = SanaMente_Hack;
 			sourceTree = "<group>";
@@ -152,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A14C8F429ED1244007983B6 /* CorrectoController.swift in Sources */,
 				1B7E2E0A29EC6E7F00C9CD00 /* SexPicker.swift in Sources */,
 				1B7E2E0829EC5E1D00C9CD00 /* CrearUsuarioView.swift in Sources */,
 				1BDBB80B29ECB0150062A8C9 /* SeleccionaPerfilView.swift in Sources */,
@@ -159,6 +166,7 @@
 				FB72CECB29EB8EC7002ADC0C /* ViewController.swift in Sources */,
 				1BDBB80729EC95780062A8C9 /* Avatars.swift in Sources */,
 				FB72CEC729EB8EC7002ADC0C /* AppDelegate.swift in Sources */,
+				1A14C8F229ED0E93007983B6 /* EmocionesControllerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +313,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 74K5X7VW9D;
+				DEVELOPMENT_TEAM = VDHDQVBQ96;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -320,7 +328,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ITESM.SanaMente-Hack";
+				PRODUCT_BUNDLE_IDENTIFIER = "marijose.SanaMente-Hack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
