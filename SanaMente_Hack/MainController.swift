@@ -12,8 +12,6 @@ class MainController: UIViewController {
     
     @IBOutlet weak var avatar: UIImageView!
     
-    @IBOutlet weak var prueba: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let myName = UserDefaults.standard.string(forKey: "name")
@@ -21,7 +19,6 @@ class MainController: UIViewController {
         
         nombre.text = "Hola, " + myName! + "!"
         avatar.image = UIImage(named: myAvatar!)
-        prueba.text = myAvatar
         
         // Do any additional setup after loading the view.
     }
