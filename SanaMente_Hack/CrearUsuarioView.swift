@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CrearUsuarioView: View {
     @State private var secondView = false
-    @AppStorage("Name") var name: String = ""
+    @State private var name: String = ""
     @State private var lastName: String = ""
     @State private var dateBirth = Date()
     @State var sexEdit: String = "Male"
@@ -75,6 +75,7 @@ struct CrearUsuarioView: View {
                     }
                     
                     Button {
+                        UserDefaults.standard.set(name, forKey: "name")
                         secondView = true
                     } label: {
                         Text("Continuar")
@@ -106,8 +107,9 @@ struct CrearUsuarioView: View {
 }
 
 struct ElegirAvatarView: View {
-    @AppStorage("Avatar") var avatarPicked: Int = 0
+    @AppStorage("Avatar") var avatarPicked: String = ""
     @State private var avatarEdit: Int = 0
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         GeometryReader { geo in
@@ -126,7 +128,7 @@ struct ElegirAvatarView: View {
                                     .opacity(avatarEdit == avatar.id ? 1.0 : 0.3)
                                     .onTapGesture {
                                         avatarEdit = avatar.id
-                                        avatarPicked = avatarEdit
+                                        avatarPicked = avatar.image
                                     }
                             }
                         }
@@ -134,10 +136,12 @@ struct ElegirAvatarView: View {
                     .frame(width: geo.size.width * 0.9, height: geo.size.height * 0.75)
                     
                     Button {
-                        
+                        UserDefaults.standard.set(avatarPicked, forKey: "avatarID")
+                        dismiss()
                     } label: {
-                        Text("Continuar")
+                        Text("Crear Cuenta")
                             .frame(width: geo.size.width * 0.85, height: geo.size.height * 0.085)
+                        
                     }
                     .font(.system(size: 24, weight: .bold))
                     .foregroundColor(.white)
