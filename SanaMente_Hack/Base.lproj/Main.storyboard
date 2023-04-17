@@ -226,21 +226,6 @@
             </objects>
             <point key="canvasLocation" x="748" y="-1317"/>
         </scene>
-        <!--Correcto Controller-->
-        <scene sceneID="lO8-QF-xwm">
-            <objects>
-                <viewController id="IET-NC-lWS" customClass="CorrectoController" customModule="SanaMente_Hack" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jEP-4r-VMy">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="yQU-56-DeP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeD-sx-UPq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1643" y="-1317"/>
-        </scene>
     </scenes>
     <resources>
         <image name="smile" width="414" height="190"/>

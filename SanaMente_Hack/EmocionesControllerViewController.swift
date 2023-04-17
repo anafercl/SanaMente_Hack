@@ -75,37 +75,23 @@ class EmocionesController: UIViewController, ARSCNViewDelegate {
     func readMyFace(anchor: ARFaceAnchor) {
         let mouthSmileLeft = anchor.blendShapes[.mouthSmileLeft]
         let mouthSmileRight = anchor.blendShapes[.mouthSmileRight]
-        let cheekPuff = anchor.blendShapes[.cheekPuff]
         let tongueOut = anchor.blendShapes[.tongueOut]
-        let jawLeft = anchor.blendShapes[.jawLeft]
-        let eyeSquintLeft = anchor.blendShapes[.eyeSquintLeft]
         let browDownLeft = anchor.blendShapes[.browDownLeft]
         let browDownRight = anchor.blendShapes[.browDownRight]
         
         
-        self.bottomText = "You are still faced"
-        // when this function is running I want to signal to the user that the function is reacting
-     
-        if ((mouthSmileLeft?.decimalValue ?? 0.0) + (mouthSmileRight?.decimalValue ?? 0.0)) > 0.9 { self.bottomText = "You are smiling. "  }
-        // smiling
-        if cheekPuff?.decimalValue ?? 0.0 > 0.4 { self.bottomText = "You are puffing your cheeks " }
-       // puffy cheeks
-        if tongueOut?.decimalValue ?? 0.0 > 0.1 {self.bottomText = "You are sticking your tongue out"}
-        // tongue out
-        if jawLeft?.decimalValue ?? 0.0 > 0.1 {self.bottomText = "You are moving your jaw to the left"}
-        // left jaw
-        if eyeSquintLeft?.decimalValue ?? 0.0 > 0.2 {self.bottomText = "You are squinting your left eye"}
+        self.bottomText = "¡Puedo verte!"
+        
+        if ((mouthSmileLeft?.decimalValue ?? 0.0) + (mouthSmileRight?.decimalValue ?? 0.0)) > 0.9 { self.bottomText = "¡Estás sonriendo!"
+        }
+        if tongueOut?.decimalValue ?? 0.0 > 0.1 {self.bottomText = "Estás sacando la lengua!"}
         
         if ((browDownLeft?.decimalValue ?? 0.0) + (browDownRight?.decimalValue ?? 0.0)) > 0.9 {
-            self.bottomText = "You are angry."
+            self.bottomText = "Estás enojado?"
         }
         
         
     }
-    
-    
-    
-    /* END TEST ARFACETRACKING */
     
     
     // MARK: - ARSCNViewDelegate
