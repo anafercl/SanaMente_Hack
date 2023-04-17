@@ -82,7 +82,6 @@
 				1BDBB80629EC95780062A8C9 /* Avatars.swift */,
 				1A14C8F129ED0E93007983B6 /* EmocionesControllerViewController.swift */,
 				1BAD6E5C29ECE8E400E02C04 /* MainController.swift */,
-
 			);
 			path = SanaMente_Hack;
 			sourceTree = "<group>";
@@ -314,7 +313,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VDHDQVBQ96;
+				DEVELOPMENT_TEAM = 74K5X7VW9D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -329,7 +328,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "marijose.SanaMente-Hack";
+				PRODUCT_BUNDLE_IDENTIFIER = "alexdennis.SanaMente-Hack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
