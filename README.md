@@ -1,4 +1,6 @@
-### Sana Mente
+### Sana Mente  
+
+<img src="https://github.com/anafercl/SanaMente_Hack/assets/88733151/6572c66f-1cf9-4e83-94b7-85d285f32673" height=170>
 
 Developed by: Ana Fernanda Chacón Lomelí, Alejandro Daniel Dennis Hernández, Geraldine Torres 
 
